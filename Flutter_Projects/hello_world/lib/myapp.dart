@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/homeController.dart';
 
-import 'app_controller.dart';
-import 'homepage.dart';
+import 'controllers/app_controller.dart';
+import 'home_page.dart';
 import 'login_page.dart';
+import 'cardapio_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
               routes: {
                 '/': (context) => const LoginPage(),
                 '/home': (context) => const HomePage(),
+                '/cardapio': (context) => const CardapioPage(),
               });
         });
   }
